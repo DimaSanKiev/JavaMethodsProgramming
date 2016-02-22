@@ -1,6 +1,6 @@
 package design_patterns._01_creational._01_factory_method._02_static_method_implementation;
 
-// pattern simple implementation
+// pattern simplest implementation
 public class OrderFactory {
     public static AbstractOrder createOrderFromFactory(String type) {
         TypeOrder sign = TypeOrder.valueOf(type.toUpperCase());
