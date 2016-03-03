@@ -37,10 +37,10 @@ public class Receiver {
             case BLOCKING:    // BLOCKING operation implementation
                 if (account.isBlocked()) {
                     account.setBlocked(false);
-                    System.out.println("The account #" + account.getId() + " is unblocked!");
+                    System.out.println("The account #" + account.getId() + " is unblocked");
                 } else {
                     account.setBlocked(true);
-                    System.out.println("The account #" + account.getId() + " is blocked!");
+                    System.out.println("The account #" + account.getId() + " is blocked");
                 }
                 break;
         }
