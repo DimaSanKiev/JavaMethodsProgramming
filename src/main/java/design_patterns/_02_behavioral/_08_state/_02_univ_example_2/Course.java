@@ -13,6 +13,7 @@ public class Course {       // Context class
         currentState = new StartState();
     }
 
+    // getters and setters
     public void setTeacher(Teacher teacher) {
         // name and course id check on teacher's specialization
         this.teacher = teacher;
@@ -95,6 +96,7 @@ public class Course {       // Context class
         }
     }
 
+    // state class
     private class EndState implements IState {
         private IState nextState = new StartState();
 
@@ -112,6 +114,7 @@ public class Course {       // Context class
         }
     }
 
+    // state class
     private class CancelledState implements IState {
         private IState nextState = new EndState();
 
