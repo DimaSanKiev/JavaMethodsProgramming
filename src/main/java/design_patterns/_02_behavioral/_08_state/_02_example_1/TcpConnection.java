@@ -1,4 +1,4 @@
-package design_patterns._02_behavioral._08_state._02_example;
+package design_patterns._02_behavioral._08_state._02_example_1;
 
 public class TcpConnection {
     private TcpState state;
