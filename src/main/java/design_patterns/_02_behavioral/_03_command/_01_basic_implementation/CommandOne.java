@@ -7,7 +7,6 @@ public class CommandOne implements ICommand {
         this.receiver = receiver;
     }
 
-    @Override
     public void execute() {
         System.out.println("Determine connection between receiver and action");
         receiver.action(TypeCommand.ONE);

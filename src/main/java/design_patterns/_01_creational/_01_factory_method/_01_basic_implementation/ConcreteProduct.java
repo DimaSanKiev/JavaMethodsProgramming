@@ -4,7 +4,6 @@ public class ConcreteProduct implements Product {
     // fields
     // constructors
 
-    @Override
     public void check() {
         System.out.println("concrete product");
     }

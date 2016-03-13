@@ -15,17 +15,14 @@ public class ConcreteSubject implements Subject {
         this.state = state;
     }
 
-    @Override
     public void attach(Observer ob) {
         // implementation
     }
 
-    @Override
     public void detach(Observer ob) {
         // implementation
     }
 
-    @Override
     public void notifyObservers() {
         // triggering Observer's method(s)
     }

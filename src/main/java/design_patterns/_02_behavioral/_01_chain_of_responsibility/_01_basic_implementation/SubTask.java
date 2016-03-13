@@ -9,7 +9,6 @@ public class SubTask implements BaseInterface {
         this.message = message;
     }
 
-    @Override
     public String handleRequest() {
         System.out.println("message in SubTask: " + message);
         if (root == null) {

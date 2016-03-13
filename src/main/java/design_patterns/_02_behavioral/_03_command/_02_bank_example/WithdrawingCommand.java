@@ -7,7 +7,6 @@ public class WithdrawingCommand implements ICommand {
         this.receiver = receiver;
     }
 
-    @Override
     public void execute() {
         receiver.action(CommandTypes.WITHDRAWING);
     }

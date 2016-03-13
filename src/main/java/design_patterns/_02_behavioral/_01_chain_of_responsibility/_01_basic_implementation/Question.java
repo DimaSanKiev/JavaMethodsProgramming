@@ -9,7 +9,6 @@ public class Question implements BaseInterface {
         this.message = message;
     }
 
-    @Override
     public String handleRequest() {
         System.out.println("message in Question: " + message);
         if (parent == null) {
