@@ -14,7 +14,6 @@ public class IssueCacheClient implements Client<Issue> {    // Prototype
         this.cache = issueList;
     }
 
-    @Override
     public Issue cloneElementById(Integer id) {
         for (Issue issue : cache) {
             if (issue.getId().equals(id)) {
@@ -24,9 +23,8 @@ public class IssueCacheClient implements Client<Issue> {    // Prototype
         throw new IllegalArgumentException("illegal ID " + id);
     }
 
-    @Override
     public List<Issue> cloneElements(Object... param) {
-        ArrayList<Issue> list = new ArrayList<>();
+        ArrayList<Issue> list = new ArrayList();
         // search, clone and organizing new collection implementation
         return list;
     }

@@ -13,20 +13,17 @@ public class ConcretePhoneOperatorMediator implements PhoneOperatorMediator {
     public ConcretePhoneOperatorMediator() {
         subscribers = new HashSet<PhoneSubscriber>();
         connections = new HashMap<PhoneSubscriber, PhoneSubscriber>();
-        nextPhoneNumber = 200_00_01;
+        nextPhoneNumber = 200-00-01;
     }
 
-    @Override
     public long generatePhoneNumber() {
         return nextPhoneNumber++;
     }
 
-    @Override
     public void addPhoneSubscriber(PhoneSubscriber ps) {
         subscribers.add(ps);
     }
 
-    @Override
     public boolean isSupported(PhoneSubscriber ps) {
         boolean isSupported = subscribers.contains(ps);
         if (!isSupported) {
@@ -35,7 +32,6 @@ public class ConcretePhoneOperatorMediator implements PhoneOperatorMediator {
         return isSupported;
     }
 
-    @Override
     public boolean connect(PhoneSubscriber ps1, PhoneSubscriber ps2) {
         if (!isSupported(ps1) || !isSupported(ps2)) {
             return false;
@@ -50,7 +46,6 @@ public class ConcretePhoneOperatorMediator implements PhoneOperatorMediator {
         return true;
     }
 
-    @Override
     public boolean disconnect(PhoneSubscriber ps1) {
         if (connections.containsKey(ps1)) {
             PhoneSubscriber ps2 = connections.get(ps1);

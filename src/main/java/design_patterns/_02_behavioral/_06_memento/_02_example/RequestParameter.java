@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RequestParameter {
-    private HashMap<String, String> param = new HashMap<>();
+    private HashMap<String, String> param = new HashMap();
 
     public RequestParameter(HashMap<String, String> param) {
         this.param = param;
@@ -43,6 +43,6 @@ public class RequestParameter {
     }
 
     public void clearParams() {
-        param = new HashMap<>();
+        param = new HashMap();
     }
 }

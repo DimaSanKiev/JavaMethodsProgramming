@@ -18,7 +18,7 @@ public class DemoAuction {
         bid4.addObserver(observer);
         bid5.addObserver(observer);
 
-        List<Bid> list = new ArrayList<>();
+        List<Bid> list = new ArrayList();
         list.add(bid1);
         list.add(bid2);
         list.add(bid3);
@@ -27,14 +27,24 @@ public class DemoAuction {
 
         System.out.println("First:");
         bid3.changePrice(40);       // bigger offer than max
-        list.forEach(System.out::println);
+        //list.forEach(System.out::println);
+        for (Bid i: list) {
+            System.out.println(i);
+        }
+
 
         System.out.println("Second:");
         bid2.changePrice(40);       // less offer than max
-        list.forEach(System.out::println);
+        //list.forEach(System.out::println);
+        for (Bid i: list) {
+            System.out.println(i);
+        }
 
         System.out.println("Third:");
         bid3.changePrice(50);       // bigger offer than max
-        list.forEach(System.out::println);
+        //list.forEach(System.out::println);
+        for (Bid i: list) {
+            System.out.println(i);
+        }
     }
 }

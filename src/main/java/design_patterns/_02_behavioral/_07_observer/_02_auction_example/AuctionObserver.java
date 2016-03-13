@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class AuctionObserver implements Observer {
-    private List<Bid> list = new ArrayList<>();
+    private List<Bid> list = new ArrayList();
 
     public void addObservable(Bid bid) {
         list.add(bid);
@@ -15,7 +15,6 @@ public class AuctionObserver implements Observer {
         // deleting object from observable list
     }
 
-    @Override
     public void handleEvent(BidEvent event) {
         double newPrice = event.getSource().getPrice();
         double price;

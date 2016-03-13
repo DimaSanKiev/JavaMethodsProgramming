@@ -4,9 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StudentSession implements Aggregate {
-    private Map<String, Integer> exams = new HashMap<>();
+    private Map<String, Integer> exams = new HashMap();
 
-    @Override
     public CustomIterator createIterator() {
         CustomIterator iterator = new ExamsIterator(this);
         iterator.first();
