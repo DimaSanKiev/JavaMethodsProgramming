@@ -30,7 +30,9 @@ The dicrectory for the classes can be found [here] (https://github.com/kencar17/
 
 After adding a README.md and wiki along with it, and the decorator example I created. It was time to 
 do a pull request to intergrate with upstream.
- 1. 
+ 1. [README.md] (https://github.com/kencar17/JavaMethodsProgramming/blob/master/README.md).
+ 2. [Wiki Page] (https://github.com/kencar17/JavaMethodsProgramming/wiki).
+ 3. [Decorator Example] (https://github.com/kencar17/JavaMethodsProgramming/tree/master/src/main/java/design_patterns/_03_structural/_04_decorator).
  
 ![Pull Request] (pr.png)
 
