@@ -1,6 +1,6 @@
 #Continuing work on Java Methods Programming
 
-## Decorator Example(Artifact 3)
+## Decorator Example(Artifact three)
 
 The next item I decided to do with this project is to add a decorator example. Where 
 one classes takes in another class and both of them extend the same abstract class and
@@ -23,3 +23,7 @@ The starbuzz example required 9 classes.
 - 1 Demo class (Runs the progarm)
 
 ![Example Code from a class] (class.png)
+
+The dicrectory for the classes can be found [here] (https://github.com/kencar17/JavaMethodsProgramming/tree/master/src/main/java/design_patterns/_03_structural/_04_decorator/_02_starbuzz_example).
+
+## Pull Request (Artifact four)
