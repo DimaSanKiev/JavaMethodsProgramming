@@ -24,4 +24,12 @@ The README.md can be found [here] (https://github.com/kencar17/JavaMethodsProgra
 
 ## Wiki Page (Artifact 2)
 
+The next thing i noticed was that the project had no wiki page to give any details about the design 
+patterns. So I created wiki page with a home page and a GOF design patterns page that gives a 
+defination of what the pattern is suppose to do and a diagarm of the layout of said pattern.
+
+![Wiki Page] (readme.png)
+
+The wiki can be found [here] (https://github.com/kencar17/JavaMethodsProgramming/wiki/GOF-Design-Patterns).
+
 
