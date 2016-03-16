@@ -16,5 +16,7 @@ create one for it.
 The README.md covers what the repositary is being used for. As well as of right now covers the GOF 
 design patterns.
 
+![README Screen Shot](readme.png)
+
 
 
