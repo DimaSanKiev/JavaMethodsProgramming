@@ -27,3 +27,12 @@ The starbuzz example required 9 classes.
 The dicrectory for the classes can be found [here] (https://github.com/kencar17/JavaMethodsProgramming/tree/master/src/main/java/design_patterns/_03_structural/_04_decorator/_02_starbuzz_example).
 
 ## Pull Request (Artifact four)
+
+After adding a README.md and wiki along with it, and the decorator example I created. It was time to 
+do a pull request to intergrate with upstream.
+ 1. 
+ 
+![Pull Request] (pr.png)
+
+The  Pull Request can be found [here] (https://github.com/DimaSanKiev/JavaMethodsProgramming/pull/1).
+
