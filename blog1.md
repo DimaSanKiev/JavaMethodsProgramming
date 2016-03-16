@@ -19,4 +19,9 @@ design patterns.
 ![README Screen Shot](readme.png)
 
 
+The README.md can be found [here] (https://github.com/kencar17/JavaMethodsProgramming/blob/master/README.md).
+
+
+## Wiki Page (Artifact 2)
+
 
