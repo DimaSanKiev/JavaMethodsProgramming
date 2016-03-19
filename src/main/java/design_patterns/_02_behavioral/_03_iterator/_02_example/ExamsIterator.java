@@ -10,13 +10,11 @@ public class ExamsIterator implements CustomIterator {
         this.session = session;
     }
 
-    @Override
     public void first() {
         iterator = session.getExams().keySet().iterator();
         next();
     }
 
-    @Override
     public void next() {
         if (iterator.hasNext()) {
             current = iterator.next();
@@ -25,12 +23,10 @@ public class ExamsIterator implements CustomIterator {
         }
     }
 
-    @Override
     public boolean isDone() {
         return done;
     }
 
-    @Override
     public Object currentItem() {
         return current;
     }
