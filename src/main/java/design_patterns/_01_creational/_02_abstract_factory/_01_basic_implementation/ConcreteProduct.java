@@ -5,7 +5,6 @@ public class ConcreteProduct implements AbstractProduct {
     // constructors
     // methods
 
-    @Override
     public void info() {
         System.out.println("Concrete product");
     }

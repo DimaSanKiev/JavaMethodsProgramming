@@ -7,7 +7,6 @@ public class Task implements BaseInterface {
         this.message = message;
     }
 
-    @Override
     public String handleRequest() {
         System.out.println("message in Task: " + message);
         return message;
