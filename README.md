@@ -6,14 +6,14 @@ Java SE, Servlets &amp; JSP, GoF Design Patterns, JUnit, Log4j, Ant, UML, SQL, J
   - Program to an interface not an implementation
   - Favor object composition over inheritance
 
-#### Creational Pattern:
+####Creational Patterns:
   - Factory Method
   - Abstract Factory
   - Builder
   - Singleton
   - Prototype
 
-#### Behavioral Patterns:
+####Behavioral Patterns:
   - Chain of Responsibility
   - Command
   - Iterator
@@ -22,7 +22,7 @@ Java SE, Servlets &amp; JSP, GoF Design Patterns, JUnit, Log4j, Ant, UML, SQL, J
   - Observer
   - State
 
-#### Structural Patterns:
+####Structural Patterns:
   - Adapter
   - Bridge
   - Composite
