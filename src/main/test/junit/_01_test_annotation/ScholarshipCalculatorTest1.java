@@ -1,17 +1,15 @@
 package junit._01_test_annotation;
 
-import junit._01_test_annotation.IScholarshipCalculator;
-import junit._01_test_annotation.ScholarshipCalculatorImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class ScholarshipCalculatorImplTest {
+public class ScholarshipCalculatorTest1 {
 
     @Test
     public void scholarshipCalculate() throws Exception {
-        IScholarshipCalculator scholarshipCalculator = new ScholarshipCalculatorImpl();
-        double basicScholarship = ScholarshipCalculatorImpl.BASIC_SCHOLARSHIP;
+        IScholarshipCalculator scholarshipCalculator = new ScholarshipCalculatorImpl1();
+        double basicScholarship = ScholarshipCalculatorImpl1.BASIC_SCHOLARSHIP;
         double stepUpCoefficient = 1.1;
         double expected = basicScholarship * stepUpCoefficient;
         double actual = scholarshipCalculator.scholarshipCalculate(stepUpCoefficient);
