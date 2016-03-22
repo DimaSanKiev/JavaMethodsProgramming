@@ -1,10 +1,10 @@
 package junit._03_exceptions_test;
 
-import junit._02_fixture.ScholarshipCalculatorImpl2;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class ScholarshipCalculatorImpl3Test {
     private ScholarshipCalculatorImpl3 scholarshipCalculator;
