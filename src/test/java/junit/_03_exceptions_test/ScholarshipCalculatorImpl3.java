@@ -2,6 +2,10 @@ package junit._03_exceptions_test;
 
 import junit._01_test_annotation.IScholarshipCalculator;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class ScholarshipCalculatorImpl3 implements IScholarshipCalculator {
     public static final double BASIC_SCHOLARSHIP = 100;
 
@@ -32,5 +36,12 @@ public class ScholarshipCalculatorImpl3 implements IScholarshipCalculator {
                 throw new NoSuchMarkException("There is no mark: " + averageMark);
         }
         return stepUpCoefficient;
+    }
+
+    public void writeResult(File file) throws IOException {
+        FileWriter fw = new FileWriter(file);
+        fw.append(this.toString());
+        fw.flush();
+        fw.close();
     }
 }
