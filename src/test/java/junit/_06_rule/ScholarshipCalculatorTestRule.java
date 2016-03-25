@@ -1,7 +1,5 @@
 package junit._06_rule;
 
-import junit._03_exceptions_test.NoSuchMarkException;
-import junit._03_exceptions_test.ScholarshipCalculatorImpl3;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
