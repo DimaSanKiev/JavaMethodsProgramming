@@ -1,5 +1,8 @@
 package junit._05_ignore;
 
+import junit._01_test_annotation.IScholarshipCalculator;
+import junit._01_test_annotation.ScholarshipCalculatorImpl1;
+import junit._03_exceptions_test.ScholarshipCalculatorImpl3;
 import org.junit.Ignore;
 import org.junit.Test;
 

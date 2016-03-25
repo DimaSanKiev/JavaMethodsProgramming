@@ -1,5 +1,7 @@
 package junit._08_parametrized;
 
+import junit._03_exceptions_test.NoSuchMarkException;
+import junit._03_exceptions_test.ScholarshipCalculatorImpl3;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

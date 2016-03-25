@@ -1,5 +1,6 @@
 package junit._04_timeout;
 
+import junit._03_exceptions_test.ScholarshipCalculatorImpl3;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
