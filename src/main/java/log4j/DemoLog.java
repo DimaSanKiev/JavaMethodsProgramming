@@ -1,6 +1,5 @@
 package log4j;
 
-import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
@@ -8,7 +7,6 @@ import java.net.URL;
 
 public class DemoLog {
     {
-        new DOMConfigurator().doConfigure("log4j.xml", LogManager.getLoggerRepository());
         URL url = getClass().getClassLoader().getResource("log4j.xml");
         DOMConfigurator.configure(url);
     }
