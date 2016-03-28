@@ -12,8 +12,8 @@ public class DemoLogProp {
 
     public static void main(String[] args) {
         try {
-            factorial(9);
-            factorial(-3);
+            DemoLog.factorial(9);
+            DemoLog.factorial(-3);
         } catch (IllegalArgumentException e) {
 
             // log ERROR level
@@ -21,20 +21,4 @@ public class DemoLogProp {
         }
     }
 
-    private static int factorial(int n) {
-        if (n < 0) {
-            throw new IllegalArgumentException("argument " + n + " is less than zero");
-        }
-
-        // log DEBUG level
-        logger.debug("argument n is: " + n);
-        int result = 1;
-        for (int i = n; i >= 1; i--) {
-            result *= i;
-        }
-
-        // log INFO level
-        logger.info("result is: " + result);
-        return result;
-    }
 }

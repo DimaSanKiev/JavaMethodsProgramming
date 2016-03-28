@@ -24,7 +24,7 @@ public class DemoLog {
         }
     }
 
-    private static int factorial(int n) {
+    static int factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("argument " + n + " is less than zero");
         }
