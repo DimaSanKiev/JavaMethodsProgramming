@@ -2,15 +2,26 @@
 <!DOCTYPE log4j:configuration SYSTEM
         "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
 <log4j:configuration>
+
     <appender name="TxtAppender" class="org.apache.log4j.FileAppender">
         <param name="Encoding" value="UTF-8"/>
         <param name="File" value="logs/log.txt"/>
         <layout class="org.apache.log4j.SimpleLayout"/>
     </appender>
+
+    <appender name="XMLAppender" class="org.apache.log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.xml"/>
+        <layout class="org.apache.log4j.HTMLLayout"/>
+    </appender>
+
     <logger name="by.bsu">
         <level value="debug"/>
     </logger>
+
     <root>
         <appender-ref ref="TxtAppender"/>
+        <appender-ref ref="XMLAppender"/>
     </root>
+
 </log4j:configuration>
