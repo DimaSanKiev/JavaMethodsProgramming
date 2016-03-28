@@ -6,13 +6,23 @@
     <appender name="TxtAppender" class="org.apache.log4j.FileAppender">
         <param name="Encoding" value="UTF-8"/>
         <param name="File" value="logs/log.txt"/>
-        <layout class="org.apache.log4j.SimpleLayout"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy HH:mm:ss} [%t] %-5p %c - %m%n"/>
+        </layout>
     </appender>
 
-    <appender name="XMLAppender" class="org.apache.log4j.FileAppender">
+    <appender name="HtmlAppender" class="org.apache.log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.html"/>
+        <layout class="org.apache.log4j.HTMLLayout">
+        </layout>
+    </appender>
+
+    <appender name="XmlAppender" class="org.apache.log4j.FileAppender">
         <param name="Encoding" value="UTF-8"/>
         <param name="File" value="logs/log.xml"/>
-        <layout class="org.apache.log4j.HTMLLayout"/>
+        <layout class="org.apache.log4j.xml.XMLLayout">
+        </layout>
     </appender>
 
     <logger name="by.bsu">
@@ -21,7 +31,9 @@
 
     <root>
         <appender-ref ref="TxtAppender"/>
-        <appender-ref ref="XMLAppender"/>
+        <appender-ref ref="XmlAppender"/>
+        <appender-ref ref="HtmlAppender"/>
     </root>
 
 </log4j:configuration>
+
