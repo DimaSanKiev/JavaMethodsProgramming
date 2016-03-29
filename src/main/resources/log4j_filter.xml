@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM
+        "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration>
+    <renderer renderedClass="log4j._02_filter.Coin" renderingClass="log4j._02_filter.CoinRenderer"/>
+    <appender name="ConsAppender" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%t %-5p %c{5} - %m%n"/>
+        </layout>
+        <filter class="log4j._02_filter.CoinFilter"/>
+    </appender>
+    <logger name="edu">
+        <level value="debug"/>
+        <appender-ref ref="ConsAppender"/>
+    </logger>
+</log4j:configuration>

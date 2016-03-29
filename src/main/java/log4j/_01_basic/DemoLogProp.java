@@ -1,11 +1,11 @@
-package log4j;
+package log4j._01_basic;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 public class DemoLogProp {
-    {
-        PropertyConfigurator.configure("log4j.properties");
+    static {
+        PropertyConfigurator.configure("src/main/resources/log4j.properties");
     }
 
     private static Logger logger = Logger.getLogger(DemoLogProp.class);

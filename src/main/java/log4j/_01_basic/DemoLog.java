@@ -1,4 +1,4 @@
-package log4j;
+package log4j._01_basic;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
