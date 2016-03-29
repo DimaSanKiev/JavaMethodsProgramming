@@ -1,0 +1,8 @@
+DROP TABLE student;
+
+CREATE TABLE student (
+  id        INT         NOT NULL GENERATED ALWAYS AS IDENTITY,
+  firstName VARCHAR(60) NOT NULL,
+  lastName  VARCHAR(60) NOT NULL,
+  PRIMARY KEY (id)
+)
