@@ -2,7 +2,7 @@ DROP TABLE student;
 
 CREATE TABLE student (
   id        INT         NOT NULL GENERATED ALWAYS AS IDENTITY,
-  firstName VARCHAR(60) NOT NULL,
-  lastName  VARCHAR(60) NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  last_name  VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 )
