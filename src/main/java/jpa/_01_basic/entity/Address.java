@@ -1,4 +1,4 @@
-package jpa.entity;
+package jpa._01_basic.entity;
 
 import javax.persistence.Embeddable;
 import java.io.Serializable;
