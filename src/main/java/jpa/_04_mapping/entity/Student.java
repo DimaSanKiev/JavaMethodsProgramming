@@ -1,4 +1,4 @@
-package jpa._04_mapping;
+package jpa._04_mapping.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
