@@ -15,8 +15,8 @@ public class Course implements Serializable{
     @Column(name = "NAME")
     private String name;
 
-    @Column(name = "LECTOR")
-    private String lector;
+    @Column(name = "LECTURER")
+    private String lecturer;
 
     @Enumerated(value = EnumType.STRING)
     private TypeCourse type = TypeCourse.OPTIONAL;
@@ -41,12 +41,12 @@ public class Course implements Serializable{
         this.name = name;
     }
 
-    public String getLector() {
-        return lector;
+    public String getLecturer() {
+        return lecturer;
     }
 
-    public void setLector(String lector) {
-        this.lector = lector;
+    public void setLecturer(String lecturer) {
+        this.lecturer = lecturer;
     }
 
     public TypeCourse getType() {
@@ -70,7 +70,7 @@ public class Course implements Serializable{
         return "Course{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", lector='" + lector + '\'' +
+                ", lector='" + lecturer + '\'' +
                 ", type=" + type +
                 ", students=" + students +
                 '}';
