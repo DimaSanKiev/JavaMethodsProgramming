@@ -29,6 +29,10 @@ public class Student implements Serializable {
     )
     private List<Course> courses;
 
+    // one-to-one relationship mapping
+    @OneToOne
+    private Address address;
+
     public int getId() {
         return id;
     }
@@ -61,6 +65,14 @@ public class Student implements Serializable {
         this.courses = courses;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -68,6 +80,7 @@ public class Student implements Serializable {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", courses=" + courses +
+                ", address=" + address +
                 '}';
     }
 }

@@ -1,5 +1,6 @@
 DROP TABLE student;
 DROP TABLE course;
+DROP TABLE address;
 
 CREATE TABLE student (
   id         INT         NOT NULL GENERATED ALWAYS AS IDENTITY,
@@ -12,5 +13,14 @@ CREATE TABLE course (
   id       INT         NOT NULL GENERATED ALWAYS AS IDENTITY,
   name     VARCHAR(50) NOT NULL,
   lecturer VARCHAR(50) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE address (
+  id     INT         NOT NULL GENERATED ALWAYS AS IDENTITY,
+  street VARCHAR(50) NOT NULL,
+  city   VARCHAR(50) NOT NULL,
+  state  VARCHAR(50) NOT NULL,
+  zip    VARCHAR(20) NOT NULL,
   PRIMARY KEY (id)
 );

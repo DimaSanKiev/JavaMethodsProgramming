@@ -1,5 +1,6 @@
 package jpa._04_mapping;
 
+import jpa._04_mapping.dao.CourseStudentDao;
 import jpa._04_mapping.entity.Course;
 import jpa._04_mapping.entity.Student;
 
