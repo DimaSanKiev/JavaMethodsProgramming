@@ -22,6 +22,9 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>jpa._04_mapping.entity.Student</class>
         <class>jpa._04_mapping.entity.Address</class>
+        <class>jpa._05_inheritance.Course</class>
+        <class>jpa._05_inheritance.OptionalCourse</class>
+        <class>jpa._05_inheritance.RequiredCourse</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.DerbyTenSevenDialect"/>
             <property name="hibernate.connection.url" value="jdbc:derby:/Users/Dima/Java/Projects/JavaMethodsProgramming/UniversityDB"/>
