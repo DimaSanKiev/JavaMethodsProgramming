@@ -7,5 +7,13 @@
         <property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
         <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
         <property name="hibernate.connection.url">jdbc:derby:/Users/Dima/Java/Projects/JavaMethodsProgramming/University_HIB</property>
+        <!-- Hibernate Optional Configuration Properties -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.default_entity_mode">pojo</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.pool_size">50</property>
+        <mapping class="hibernate.Course"/>
+        <mapping class="hibernate.Student"/>
     </session-factory>
 </hibernate-configuration>
