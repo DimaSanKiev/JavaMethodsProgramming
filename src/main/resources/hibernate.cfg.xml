@@ -6,7 +6,10 @@
         <!-- Hibernate JDBC Properties -->
         <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
         <property name="hibernate.connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
-        <property name="hibernate.connection.url">jdbc:derby:/Users/Dima/Java/Projects/JavaMethodsProgramming/University_HIB</property>
+        <property name="hibernate.connection.url">
+            E:\Dima\Information\IT\MyProjects\JavaMethodsProgramming\University_HIB;create=true
+        </property>
+        <!--<property name="hibernate.connection.url">jdbc:derby:/Users/Dima/Java/Projects/JavaMethodsProgramming/University_HIB</property>-->
         <!-- Transaction API -->
         <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
         <!-- Hibernate Optional Configuration Properties -->
