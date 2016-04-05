@@ -34,7 +34,7 @@ public class StudentCourseSimplestDemo {
             Student student1 = new Student("Zanko", "Vital");
             studentDao.addStudent(student1);
             System.out.println(setRes);
-            Student student2 = studentDao.getStudent("Ivanov")
+            Student student2 = studentDao.getStudent("Ivanov");
             System.out.println(student2);
             Set<Student> set2 = new HashSet<>();
             set2.add(student1);
