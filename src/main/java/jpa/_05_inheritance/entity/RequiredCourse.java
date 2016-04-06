@@ -1,4 +1,4 @@
-package jpa._05_inheritance;
+package jpa._05_inheritance.entity;
 
 import javax.persistence.*;
 import java.io.Serializable;
