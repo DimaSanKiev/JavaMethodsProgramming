@@ -3,5 +3,6 @@ JavaMethodsProgramming.iml
 target
 methods-programming.iml
 logs
+derby.log
 UniversityDB
 University_HIB
