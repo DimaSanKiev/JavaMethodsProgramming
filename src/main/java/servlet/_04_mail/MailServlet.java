@@ -1,4 +1,4 @@
-package servlet._04_email;
+package servlet._04_mail;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -28,6 +28,6 @@ public class MailServlet extends HttpServlet {
         mailOperator.start();
 
         // redirecting to create new mail page
-        request.getRequestDispatcher("/send.jsp").forward(request, response);
+        request.getRequestDispatcher("/jsp/send.jsp").forward(request, response);
     }
 }
